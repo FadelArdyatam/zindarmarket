@@ -1,0 +1,80 @@
+.Offers {
+    height: 100vh;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+  }
+  
+  .Offers-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .Offers-left h2 {
+    color: #090909;
+    font-size: 26px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .Offers-hand-icon p {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  
+  .Offers-hand-icon img {
+    width: 70px;
+    height: auto;
+  }
+  
+  .Offers-text {
+    font-size: 68px;
+    font-weight: 700;
+    line-height: 1.1;
+  }
+  
+  .Offers-latest-btn {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 310px;
+    height: 70px;
+    border-radius: 75px;
+    background: #ff4141;
+    color: #ffffff;
+    padding: 0 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .Offers-latest-btn:hover {
+    transform: scale(1.05);
+  }
+  
+  .Offers-latest-btn div {
+    font-size: 22px;
+    font-weight: 500;
+  }
+  
+  .Offers-latest-btn img {
+    width: 35px;
+    height: auto;
+  }
+  
+  .Offers-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .Offers-right img {
+    max-width: 100%;
+    height: auto;
+  }

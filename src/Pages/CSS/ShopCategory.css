@@ -1,0 +1,134 @@
+/* ShopCategory.css */
+
+.shop-category {
+    width: 100%;
+    margin-bottom: 100px;
+  }
+  
+  /* Banner image - full width */
+  .shop-category > img:first-child {
+    width: 100vw;
+    height: auto;
+    margin-top: 0;
+    margin-bottom: 50px;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    max-width: 100vw;
+    border-radius: 0;
+    box-shadow: none;
+    object-fit: cover;
+  }
+  
+  .shopcategory-indexsort {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    width: 100%;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 40px;
+  }
+  
+  .shopcategory-indexsort p {
+    color: #454545;
+    font-size: 16px;
+  }
+  
+  .shopcategory-indexsort p span {
+    font-weight: 600;
+  }
+  
+  .shopcategory-sort {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 16px;
+    border-radius: 40px;
+    border: 1px solid #e3e3e3;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .shopcategory-sort:hover {
+    border-color: #888;
+    background-color: #f9f9f9;
+  }
+  
+  .shopcategory-sort img {
+    width: 14px;
+    height: auto;
+    margin: 0;
+    box-shadow: none;
+  }
+  
+  .shopcategory-products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 40px;
+  }
+  
+  /* Media Queries for Responsive Design */
+  
+  @media (max-width: 1200px) {
+    .shopcategory-products {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+  }
+  
+  @media (max-width: 900px) {
+    .shop-category {
+      margin-bottom: 70px;
+    }
+    
+    .shopcategory-indexsort,
+    .shopcategory-products {
+      padding: 0 20px;
+    }
+    
+    .shopcategory-products {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+    
+    .shop-category > img:first-child {
+      margin-bottom: 30px;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .shop-category {
+      margin-bottom: 50px;
+    }
+    
+    .shopcategory-indexsort,
+    .shopcategory-products {
+      padding: 0 15px;
+    }
+    
+    .shopcategory-indexsort {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+    
+    .shopcategory-products {
+      grid-template-columns: 1fr;
+      gap: 15px;
+    }
+    
+    .shop-category > img:first-child {
+      margin-bottom: 20px;
+    }
+  }

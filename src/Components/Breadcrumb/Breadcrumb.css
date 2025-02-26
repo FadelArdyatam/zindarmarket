@@ -1,0 +1,50 @@
+/* Breadcrumb.css */
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 20px 80px;
+    background-color: #f9f9f9;
+    font-size: 14px;
+    color: #666;
+    max-width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  }
+  
+  .breadcrumb img {
+    width: 10px;
+    height: 10px;
+    opacity: 0.5;
+  }
+  
+  .breadcrumb a {
+    text-decoration: none;
+    color: #666;
+    transition: color 0.2s ease;
+    cursor: pointer;
+  }
+  
+  .breadcrumb a:hover {
+    color: #ff6b6b;
+  }
+  
+  .breadcrumb .current {
+    color: #ff6b6b;
+    font-weight: 500;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .breadcrumb {
+      padding: 15px 20px;
+      font-size: 12px;
+    }
+    
+    .breadcrumb img {
+      width: 8px;
+      height: 8px;
+    }
+  }

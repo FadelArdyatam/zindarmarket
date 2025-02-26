@@ -1,3 +1,8 @@
+
+*{
+  margin: 0;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +10,33 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family:'poppins';
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* Custom selection highlight with specific gradient */
+::selection {
+  background: linear-gradient(90deg, #ff5252, #ff8a65);
+  color: white;
+}
+
+/* For Firefox compatibility */
+::-moz-selection {
+  background: linear-gradient(90deg, #ff5252, #ff8a65);
+  color: white;
+}
+
+/* Fallback single color for browsers that don't support gradients in selections */
+::selection {
+  background-color: #ff5252;
+  color: white;
+}
+
+::-moz-selection {
+  background-color: #ff5252;
+  color: white;
 }
